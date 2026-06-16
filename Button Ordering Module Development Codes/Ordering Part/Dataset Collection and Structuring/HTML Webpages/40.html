@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dataset Pattern 2</title>
+    <style>
+        body {
+            background-color: #0066cc;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        .btn1 {
+            position: absolute;
+            top: 5%;
+            left: 10%;
+            background-color: rgba(255, 255, 0, 1.0);
+            color: rgba(0, 0, 0, 1.0);
+            border: none;
+            padding: 40px 80px;
+            font-size: 30px;
+            cursor: pointer;
+            width: 200px;
+            height: 100px;
+        }
+        .btn2 {
+            position: absolute;
+            top: 15%;
+            right: 20%;
+            background-color: rgba(204, 221, 255, 0.8);
+            color: rgba(0, 51, 102, 1.0);
+            border: none;
+            padding: 2px 4px;
+            font-size: 8px;
+            cursor: pointer;
+            width: 40px;
+            height: 21px;
+        }
+        .btn3 {
+            position: absolute;
+            bottom: 30%;
+            left: 25%;
+            background-color: rgba(255, 255, 255, 1.0);
+            color: rgba(0, 102, 204, 1.0);
+            border: none;
+            padding: 15px 30px;
+            font-size: 15px;
+            cursor: pointer;
+            width: 108px;
+            height: 51px;
+        }
+        .btn4 {
+            position: absolute;
+            top: 60%;
+            right: 15%;
+            background-color: rgba(0, 51, 102, 1.0);
+            color: rgba(153, 204, 255, 0.6);
+            border: none;
+            padding: 12px 24px;
+            font-size: 13px;
+            cursor: pointer;
+            width: 76px;
+            height: 35px;
+        }
+        .btn5 {
+            position: absolute;
+            bottom: 20%;
+            right: 40%;
+            background-color: rgba(255, 102, 0, 1.0);
+            color: rgba(255, 255, 255, 1.0);
+            border: none;
+            padding: 25px 50px;
+            font-size: 20px;
+            cursor: pointer;
+            width: 127px;
+            height: 75px;
+        }
+        .btn6 {
+            position: absolute;
+            top: 40%;
+            left: 40%;
+            background-color: rgba(0, 153, 255, 0.7);
+            color: rgba(0, 0, 51, 1.0);
+            border: none;
+            padding: 8px 16px;
+            font-size: 11px;
+            cursor: pointer;
+            width: 64px;
+            height: 26px;
+        }
+        .btn7 {
+            position: absolute;
+            bottom: 50%;
+            left: 60%;
+            background-color: rgba(0, 17, 102, 1.0);
+            color: rgba(255, 255, 255, 1.0);
+            border: none;
+            padding: 18px 36px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 97px;
+            height: 43px;
+        }
+    </style>
+    <script>
+        function buttonClick(text) {
+            console.log('Button clicked: ' + text);
+        }
+    </script>
+</head>
+<body>
+    <button class="btn1" onclick="buttonClick('MAIN')">MAIN</button>
+    <button class="btn2" onclick="buttonClick('info')">info</button>
+    <button class="btn3" onclick="buttonClick('Action')">Action</button>
+    <button class="btn4" onclick="buttonClick('hidden')">hidden</button>
+    <button class="btn5" onclick="buttonClick('ALERT')">ALERT</button>
+    <button class="btn6" onclick="buttonClick('link')">link</button>
+    <button class="btn7" onclick="buttonClick('Process')">Process</button>
+</body>
+</html>

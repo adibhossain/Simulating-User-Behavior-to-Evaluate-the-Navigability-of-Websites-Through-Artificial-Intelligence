@@ -1,0 +1,61 @@
+[BUTTON APPEARANCE]
+
+-button_width
+-button_width_ratio_with_largest_button_width
+-button_width_ratio_with_smallest_button_width
+-button_height
+-button_height_ratio_with_largest_button_height
+-button_height_ratio_with_smallest_button_height
+-button_color_R
+-button_color_G
+-button_color_B
+-button_color_A
+-button_contrast_with_background
+
+[BUTTON PLACEMENT]
+
+-button_center_x_coordinate
+-button_center_y_coordinate
+-button_is_on_navbar
+-button_is_on_footer
+-button_is_on_left_half_of_screen
+-button_is_on_right_half_of_screen
+-button_is_on_upper_half_of_screen
+-button_is_on_lower_half_of_screen
+-button_is_on_horizontal_center_of_screen
+-button_is_on_vertical_center_of_screen
+
+[BUTTON SURROUNDINGS]
+
+-total_number_of_buttons_in_radius_5_percent_of_screen_size
+-total_number_of_buttons_in_radius_10_percent_of_screen_size
+-total_number_of_buttons_in_radius_25_percent_of_screen_size
+-total_number_of_buttons_in_radius_50_percent_of_screen_size
+
+*( 'not sure about the % values' )
+
+[BUTTON TEXT]
+
+-button_text_size
+-button_text_size_ratio_with_largest_button_text
+-button_text_size_ratio_with_smallest_button_text
+-button_text_color_R
+-button_text_color_G
+-button_text_color_B
+-button_text_color_A
+-button_text_contrast_with_button
+-button_text_is_bold
+-button_text_is_italic
+
+[WEBSITE'S PROPERTIES]
+
+-total_number_of_buttons_in_the_website
+-total_number_of_buttons_in_the_navbar
+-largest_button_text_in_the_website
+-smallest_button_text_in_the_website
+-largest_button_width_in_the_website
+-smallest_button_width_in_the_website
+-largest_button_height_in_the_website
+-smallest_button_height_in_the_website
+
+(not taking scrollable websites into account, add this to limitation maybe)

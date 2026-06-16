@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Tours</title>
+    <!-- <link rel="stylesheet" href="styles.css"> Link to your external CSS file -->
+    <script src="main.js"></script>
+    <style>
+        /* Inline styles for demonstration purposes */
+        .navbar {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+        .navbar button {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 8px 16px;
+            border-radius: 20px;
+            background-color: #4CAF50;
+            border: none;
+            cursor: pointer;
+        }
+        .navbar a.bad-button {
+            background-color: #f44336; /* Bad button color */
+        }
+        .hero {
+            background-color: #f2f2f2;
+            padding: 50px 0;
+            text-align: center;
+        }
+        .hero .btn {
+            color: #fff;
+            background-color: #007bff; /* Good button color */
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+        .featured-tours {
+            padding: 50px 0;
+            text-align: center;
+        }
+        .featured-tours .btn {
+            color: #fff;
+            background-color: #dc3545; /* Bad button color */
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .footer .btn {
+            color: #fff;
+            background-color: #ffc107; /* Warning button color */
+            padding: 8px 16px;
+            border-radius: 0;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <button class="btn" onclick="test_func(this)">Home</button>
+        <button class="btn bad-button" onclick="test_func(this)">Tours</button>
+        <button class="btn" onclick="test_func(this)">About Us</button>
+        <button class="btn" onclick="test_func(this)">Contact</button>
+    </div>
+
+    <div class="hero">
+        <h1>Welcome to Awesome Tours</h1>
+        <p>Discover breathtaking destinations and create unforgettable memories on our guided tours.</p>
+        <button class="btn" onclick="test_func(this)">Explore Tours</button>
+    </div>
+
+    <div class="featured-tours">
+        <h2>Featured Tours</h2>
+        <div class="tour-card">
+            <!-- <img src="tour1.jpg" alt="Tour 1"> -->
+            <h3>Tour Name</h3>
+            <p>Description of the tour.</p>
+            <button class="btn" onclick="test_func(this)">Learn More</button>
+        </div>
+        <!-- Repeat the above tour card structure for additional featured tours -->
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Awesome Tours. All rights reserved.</p>
+        <button class="btn" onclick="test_func(this)">Subscribe</button>
+    </div>
+</body>
+</html>

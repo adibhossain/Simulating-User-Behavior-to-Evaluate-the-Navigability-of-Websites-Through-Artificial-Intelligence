@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="main.js"></script>
+	<link href="style.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scattered Interface</title>
+    <style>
+        body {
+            background: radial-gradient(circle, #667eea 0%, #764ba2 100%);
+            color: #ffffff;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            height: 100vh;
+            position: relative;
+        }
+        .btn {
+            position: absolute;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        .btn:hover {
+            transform: rotate(5deg) scale(1.1);
+        }
+        .top-left {
+            top: 20px;
+            left: 20px;
+            padding: 15px 30px;
+            background-color: #ff6b6b;
+            color: white;
+            border-radius: 25px;
+            font-size: 16px;
+        }
+        .top-right {
+            top: 30px;
+            right: 30px;
+            padding: 8px 16px;
+            background-color: #4ecdc4;
+            color: black;
+            border-radius: 50px;
+            font-size: 12px;
+        }
+        .center-left {
+            top: 50%;
+            left: 50px;
+            padding: 20px 40px;
+            background-color: #45b7d1;
+            color: white;
+            border-radius: 0;
+            font-size: 18px;
+        }
+        .center-right {
+            top: 45%;
+            right: 60px;
+            padding: 12px 24px;
+            background-color: #96ceb4;
+            color: black;
+            border-radius: 15px;
+            font-size: 14px;
+        }
+        .bottom-left {
+            bottom: 40px;
+            left: 40px;
+            padding: 10px 20px;
+            background-color: #feca57;
+            color: black;
+            border-radius: 8px;
+            font-size: 13px;
+        }
+        .bottom-right {
+            bottom: 25px;
+            right: 25px;
+            padding: 25px 50px;
+            background-color: #ff9ff3;
+            color: black;
+            border-radius: 30px;
+            font-size: 20px;
+        }
+        .center {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 30px 60px;
+            background-color: #54a0ff;
+            color: white;
+            border-radius: 40px;
+            font-size: 24px;
+        }
+        .top-center {
+            top: 60px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 6px 12px;
+            background-color: #5f27cd;
+            color: white;
+            border-radius: 3px;
+            font-size: 10px;
+        }
+        .bottom-center {
+            bottom: 80px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 18px 36px;
+            background-color: #00d2d3;
+            color: black;
+            border-radius: 20px;
+            font-size: 16px;
+        }
+        .floating {
+            top: 30%;
+            left: 25%;
+            padding: 14px 28px;
+            background-color: #ff6348;
+            color: white;
+            border-radius: 12px;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <button class="btn top-left">Menu</button>
+    <button class="btn top-right">Login</button>
+    <button class="btn center-left">Services</button>
+    <button class="btn center-right">About</button>
+    <button class="btn bottom-left">Help</button>
+    <button class="btn bottom-right">Contact</button>
+    <button class="btn center">HOME</button>
+    <button class="btn top-center">News</button>
+    <button class="btn bottom-center">Gallery</button>
+    <button class="btn floating">Blog</button>
+</body>
+</html>

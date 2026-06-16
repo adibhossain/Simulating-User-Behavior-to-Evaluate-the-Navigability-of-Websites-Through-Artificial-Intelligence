@@ -1,0 +1,19 @@
+Function find_elements_by_XPATH(XPATH)
+  from source code
+    element[i] := find(XPATH)
+    i++
+    list.append(element)  
+  return list
+
+browser.launch()
+browser.maximize_window()
+browser.openURL("URL")
+
+//find elements by XPATH
+elements := browser.find_elements_by_XPATH("XPATH")
+
+// save all the screenshots
+for x in elements:
+  image[i] := screenshot(x)
+
+browser.quit()

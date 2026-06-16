@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="main.js"></script>
+	<link href="style.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mixed Quality</title>
+    <style>
+        body {
+            background: linear-gradient(45deg, #2c3e50, #34495e, #2c3e50);
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        .perfect {
+            position: absolute;
+            top: 20%;
+            left: 20%;
+            background-color: #3498db;
+            color: #ffffff;
+            border: none;
+            padding: 20px 40px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        .too-small {
+            position: absolute;
+            top: 25%;
+            right: 30%;
+            background-color: #e74c3c;
+            color: #ffffff;
+            border: none;
+            padding: 1px 2px;
+            font-size: 6px;
+            cursor: pointer;
+        }
+        .enormous {
+            position: absolute;
+            bottom: 10%;
+            left: 10%;
+            background-color: #2ecc71;
+            color: #ffffff;
+            border: none;
+            padding: 100px 200px;
+            font-size: 50px;
+            cursor: pointer;
+        }
+        .bad-contrast {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            background-color: #34495e;
+            color: #2c3e50;
+            border: none;
+            padding: 15px 30px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        .good-medium {
+            position: absolute;
+            top: 40%;
+            right: 20%;
+            background-color: #f39c12;
+            color: #ffffff;
+            border: none;
+            padding: 16px 32px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .nearly-invisible {
+            position: absolute;
+            bottom: 60%;
+            left: 40%;
+            background-color: #2c3e50;
+            color: #34495e;
+            border: 1px solid #2c3e50;
+            padding: 10px 20px;
+            font-size: 12px;
+            cursor: pointer;
+            opacity: 0.2;
+        }
+        .oversized-text {
+            position: absolute;
+            top: 60%;
+            right: 40%;
+            background-color: #9b59b6;
+            color: #ffffff;
+            border: none;
+            padding: 5px 10px;
+            font-size: 32px;
+            cursor: pointer;
+        }
+        .decent {
+            position: absolute;
+            bottom: 40%;
+            right: 10%;
+            background-color: #1abc9c;
+            color: #ffffff;
+            border: none;
+            padding: 12px 24px;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+        .microscopic-unreadable {
+            position: absolute;
+            top: 70%;
+            left: 30%;
+            background-color: #e67e22;
+            color: #ffffff;
+            border: none;
+            padding: 0.5px 1px;
+            font-size: 3px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button class="perfect">Good Button</button>
+    <button class="too-small">tiny</button>
+    <button class="enormous">MASSIVE</button>
+    <button class="bad-contrast">Hidden</button>
+    <button class="good-medium">Normal</button>
+    <button class="nearly-invisible">Ghost</button>
+    <button class="oversized-text">BIG</button>
+    <button class="decent">OK</button>
+    <button class="microscopic-unreadable">.</button>
+</body>
+</html>

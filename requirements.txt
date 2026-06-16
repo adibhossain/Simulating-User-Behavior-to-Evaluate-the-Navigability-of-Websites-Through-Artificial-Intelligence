@@ -1,0 +1,15 @@
+# Python 3.10.x recommended (developed on 3.10.2, pip 23.3.1)
+# Install:  pip install -r requirements.txt
+#
+# Standard-library modules used by the code need NO install:
+#   time, math, random, io, subprocess, pickle
+
+selenium                # drives Firefox, finds links/buttons, screenshots
+ultralytics             # YOLO button detection (best.pt) -> pulls in torch, opencv
+pyautogui               # human-like mouse movement + clicking on the real screen
+pandas                  # per-button feature DataFrame for the ordering model
+numpy                   # math for curved mouse paths
+sentence-transformers   # semantic text matching -> pulls in torch, transformers
+networkx                # builds the navigation graph
+matplotlib              # renders the graph image
+reportlab               # generates report.pdf

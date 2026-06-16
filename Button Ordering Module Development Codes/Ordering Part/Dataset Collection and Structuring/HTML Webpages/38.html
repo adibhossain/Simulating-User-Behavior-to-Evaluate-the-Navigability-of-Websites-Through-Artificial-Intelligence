@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>★ JENNY'S HOMEPAGE ★</title>
+    <style>
+        body {
+            background-color: black;
+            color: lime;
+            font-family: Courier New;
+            margin: 0;
+            overflow: hidden;
+        }
+        .neon {
+            color: #00ff00;
+            text-shadow: 0 0 10px #00ff00;
+        }
+        .rainbow {
+            background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+        }
+        .btn90s {
+            background-color: #c0c0c0;
+            border: 2px outset #c0c0c0;
+            padding: 8px;
+            cursor: pointer;
+            font-family: MS Sans Serif;
+        }
+    </style>
+    <script>
+        function buttonClick(text) {
+            alert('You clicked: ' + text);
+        }
+    </script>
+</head>
+<body>
+    <center>
+        <h1 class="rainbow">✨ WELCOME TO JENNY'S CYBER SPACE ✨</h1>
+        <marquee><font color="yellow">*** UNDER CONSTRUCTION *** BEST VIEWED IN NETSCAPE *** LAST UPDATED: TODAY ***</font></marquee>
+    </center>
+    
+    <br>
+    
+    <table width="100%" cellpadding="10">
+        <tr>
+            <td width="200" bgcolor="#330033">
+                <center><font color="magenta"><b>NAVIGATION</b></font></center><br>
+                
+                <button class="btn90s" style="width:150px;background-color:#ff00ff;color:black;" onclick="buttonClick('HOME')">🏠 HOME 🏠</button><br><br>
+                <button class="btn90s" style="width:150px;background-color:#00ffff;color:black;" onclick="buttonClick('PHOTOS')">📷 PHOTOS 📷</button><br><br>
+                <button class="btn90s" style="width:150px;background-color:#ffff00;color:black;" onclick="buttonClick('MUSIC')">🎵 MUSIC 🎵</button><br><br>
+                <button class="btn90s" style="width:150px;background-color:#ff6600;color:white;" onclick="buttonClick('DIARY')">📝 DIARY 📝</button><br><br>
+                <button class="btn90s" style="width:150px;background-color:#6600ff;color:white;" onclick="buttonClick('EMAIL')">💌 EMAIL 💌</button>
+            </td>
+            <td bgcolor="#003300">
+                <center>
+                    <h2 class="neon">ABOUT ME:</h2>
+                    <p><font color="white">Hi! I'm Jenny and this is my homepage! I love computers and the internet!</font></p>
+                    
+                    <button style="background-color:red;color:white;padding:15px;border:3px solid darkred;font-size:16px;" onclick="buttonClick('GUESTBOOK')">🔥 SIGN MY GUESTBOOK! 🔥</button>
+                    <br><br>
+                    
+                    <button style="background-color:blue;color:yellow;padding:10px;border:2px solid navy;" onclick="buttonClick('WEBRING')">View My Webring</button>
+                    <button style="background-color:green;color:white;padding:10px;margin-left:10px;" onclick="buttonClick('FAVORITES')">Add Me to Favorites</button>
+                    <br><br>
+                    
+                    <button style="background-color:purple;color:lime;padding:20px;font-size:18px;border:4px ridge purple;" onclick="buttonClick('COOL LINKS')">⭐ COOL LINKS ⭐</button>
+                    <br><br>
+                    
+                    <button style="background-color:orange;color:black;padding:8px;" onclick="buttonClick('WINAMP SKINS')">Download Winamp Skins</button>
+                    <button style="background-color:pink;color:darkblue;padding:8px;margin-left:5px;" onclick="buttonClick('CURSORS')">Free Cursors</button>
+                    <br><br>
+                    
+                    <button style="background-color:cyan;color:red;padding:12px;border:5px outset cyan;" onclick="buttonClick('MP3 COLLECTION')">💿 MP3 COLLECTION 💿</button>
+                </center>
+            </td>
+        </tr>
+    </table>
+    
+    <marquee direction="right" bgcolor="yellow"><font color="red">Visitor Counter: 00001337 | You are visitor #42!</font></marquee>
+</body>
+</html>

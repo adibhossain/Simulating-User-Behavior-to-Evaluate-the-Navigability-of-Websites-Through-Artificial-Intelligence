@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="main.js"></script>
+	<link href="style.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circular Interface</title>
+    <style>
+        body {
+            background: radial-gradient(circle at center, #2c3e50 0%, #34495e 50%, #2c3e50 100%);
+            color: #ecf0f1;
+            font-family: 'Impact', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            height: 100vh;
+        }
+        .btn {
+            position: absolute;
+            border: none;
+            cursor: pointer;
+            font-family: 'Impact', sans-serif;
+            transition: all 0.5s;
+            text-transform: uppercase;
+        }
+        .btn:hover {
+            transform: scale(1.2) rotate(360deg);
+        }
+        .circle-center {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 120px;
+            height: 120px;
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            color: white;
+            border-radius: 50%;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .circle-1 {
+            top: 20%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(45deg, #4834d4, #686de0);
+            color: white;
+            border-radius: 50%;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .circle-2 {
+            top: 35%;
+            right: 15%;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(45deg, #00d2d3, #01a3a4);
+            color: black;
+            border-radius: 50%;
+            font-size: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .circle-3 {
+            bottom: 35%;
+            right: 15%;
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(45deg, #feca57, #ff9ff3);
+            color: black;
+            border-radius: 50%;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .circle-4 {
+            bottom: 20%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(45deg, #ff9ff3, #f368e0);
+            color: white;
+            border-radius: 50%;
+            font-size: 11px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .circle-5 {
+            bottom: 35%;
+            left: 15%;
+            width: 90px;
+            height: 90px;
+            background: linear-gradient(45deg, #54a0ff, #2e86de);
+            color: white;
+            border-radius: 50%;
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .circle-6 {
+            top: 35%;
+            left: 15%;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(45deg, #5f27cd, #341f97);
+            color: white;
+            border-radius: 50%;
+            font-size: 9px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .circle-7 {
+            top: 30%;
+            right: 35%;
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(45deg, #ff6348, #c44569);
+            color: white;
+            border-radius: 50%;
+            font-size: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .circle-8 {
+            bottom: 30%;
+            left: 35%;
+            width: 110px;
+            height: 110px;
+            background: linear-gradient(45deg, #48dbfb, #0abde3);
+            color: black;
+            border-radius: 50%;
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .circle-9 {
+            top: 60%;
+            right: 40%;
+            width: 30px;
+            height: 30px;
+            background: linear-gradient(45deg, #ffffff, #ddd);
+            color: black;
+            border-radius: 50%;
+            font-size: 7px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <button class="btn circle-center">HOME</button>
+    <button class="btn circle-1">Menu</button>
+    <button class="btn circle-2">Info</button>
+    <button class="btn circle-3">Gallery</button>
+    <button class="btn circle-4">News</button>
+    <button class="btn circle-5">About</button>
+    <button class="btn circle-6">Help</button>
+    <button class="btn circle-7">Go</button>
+    <button class="btn circle-8">Contact</button>
+    <button class="btn circle-9">+</button>
+</body>
+</html>

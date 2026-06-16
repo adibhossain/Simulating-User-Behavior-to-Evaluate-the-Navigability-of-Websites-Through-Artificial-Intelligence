@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Control</title>
+    <style>
+        body {
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            height: 100vh;
+            font-family: 'Arial', sans-serif;
+        }
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 200px;
+            height: 100vh;
+            background-color: #343a40;
+            padding: 20px 0;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+        }
+        .sidebar-btn {
+            background-color: #495057;
+            color: #ffffff;
+            border: none;
+            padding: 12px 20px;
+            width: 160px;
+            font-size: 13px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .sidebar-btn:hover {
+            background-color: #6c757d;
+        }
+        .main-area {
+            margin-left: 200px;
+            padding: 40px;
+            height: 100vh;
+            position: relative;
+        }
+        .top-row {
+            display: flex;
+            gap: 25px;
+            margin-bottom: 50px;
+        }
+        .top-btn {
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            padding: 15px 30px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+        .scattered-btn1 {
+            position: absolute;
+            top: 200px;
+            right: 100px;
+            background-color: #28a745;
+            color: #ffffff;
+            border: none;
+            padding: 20px 40px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 50px;
+        }
+        .scattered-btn2 {
+            position: absolute;
+            bottom: 150px;
+            left: 100px;
+            background-color: #dc3545;
+            color: #ffffff;
+            border: none;
+            padding: 8px 16px;
+            font-size: 10px;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+        .scattered-btn3 {
+            position: absolute;
+            bottom: 80px;
+            right: 200px;
+            background-color: #ffc107;
+            color: #000000;
+            border: none;
+            padding: 25px 50px;
+            font-size: 20px;
+            cursor: pointer;
+            border-radius: 15px;
+        }
+        .center-btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #6f42c1;
+            color: #ffffff;
+            border: none;
+            padding: 30px 60px;
+            font-size: 24px;
+            cursor: pointer;
+            border-radius: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <button class="sidebar-btn">Dashboard</button>
+        <button class="sidebar-btn">Analytics</button>
+        <button class="sidebar-btn">Reports</button>
+        <button class="sidebar-btn">Users</button>
+        <button class="sidebar-btn">Settings</button>
+        <button class="sidebar-btn">Security</button>
+        <button class="sidebar-btn">Backup</button>
+        <button class="sidebar-btn">Logs</button>
+    </div>
+    
+    <div class="main-area">
+        <div class="top-row">
+            <button class="top-btn">Create</button>
+            <button class="top-btn">Edit</button>
+            <button class="top-btn">Delete</button>
+        </div>
+        
+        <button class="center-btn">EXECUTE</button>
+        <button class="scattered-btn1">Process</button>
+        <button class="scattered-btn2">tiny</button>
+        <button class="scattered-btn3">FINISH</button>
+    </div>
+</body>
+</html>

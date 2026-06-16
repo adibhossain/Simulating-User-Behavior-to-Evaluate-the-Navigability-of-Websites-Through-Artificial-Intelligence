@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Navigation</title>
+    <style>
+        body {
+            background-color: #0f0f23;
+            color: #cccccc;
+            font-family: 'Consolas', monospace;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            height: 100vh;
+        }
+        .btn {
+            position: absolute;
+            border: 2px solid;
+            cursor: pointer;
+            font-family: 'Consolas', monospace;
+            transition: all 0.2s;
+        }
+        .btn:hover {
+            box-shadow: 0 0 15px currentColor;
+        }
+        .left-column {
+            left: 30px;
+        }
+        .right-column {
+            right: 30px;
+        }
+        .center-column {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .btn1 {
+            top: 50px;
+            padding: 25px 50px;
+            background-color: #ffff00;
+            color: #000000;
+            border-color: #ffff00;
+            font-size: 20px;
+        }
+        .btn2 {
+            top: 150px;
+            padding: 8px 16px;
+            background-color: transparent;
+            color: #00ff00;
+            border-color: #00ff00;
+            font-size: 11px;
+        }
+        .btn3 {
+            top: 220px;
+            padding: 15px 30px;
+            background-color: #ff0080;
+            color: #ffffff;
+            border-color: #ff0080;
+            font-size: 14px;
+        }
+        .btn4 {
+            top: 320px;
+            padding: 12px 24px;
+            background-color: transparent;
+            color: #00ffff;
+            border-color: #00ffff;
+            font-size: 13px;
+        }
+        .btn5 {
+            top: 420px;
+            padding: 20px 40px;
+            background-color: #8000ff;
+            color: #ffffff;
+            border-color: #8000ff;
+            font-size: 16px;
+        }
+        .btn6 {
+            top: 100px;
+            padding: 10px 20px;
+            background-color: transparent;
+            color: #ff8000;
+            border-color: #ff8000;
+            font-size: 12px;
+        }
+        .btn7 {
+            top: 200px;
+            padding: 18px 36px;
+            background-color: #0080ff;
+            color: #ffffff;
+            border-color: #0080ff;
+            font-size: 15px;
+        }
+        .btn8 {
+            top: 300px;
+            padding: 6px 12px;
+            background-color: transparent;
+            color: #ff4040;
+            border-color: #ff4040;
+            font-size: 9px;
+        }
+        .btn9 {
+            top: 400px;
+            padding: 22px 44px;
+            background-color: #40ff40;
+            color: #000000;
+            border-color: #40ff40;
+            font-size: 17px;
+        }
+        .btn10 {
+            top: 250px;
+            padding: 30px 60px;
+            background-color: #ffffff;
+            color: #000000;
+            border-color: #ffffff;
+            font-size: 22px;
+        }
+    </style>
+</head>
+<body>
+    <button class="btn btn1 left-column">DASHBOARD</button>
+    <button class="btn btn2 left-column">stats</button>
+    <button class="btn btn3 left-column">Reports</button>
+    <button class="btn btn4 left-column">settings</button>
+    <button class="btn btn5 left-column">Analytics</button>
+    
+    <button class="btn btn6 right-column">profile</button>
+    <button class="btn btn7 right-column">Messages</button>
+    <button class="btn btn8 right-column">log</button>
+    <button class="btn btn9 right-column">Export</button>
+    
+    <button class="btn btn10 center-column">EXECUTE</button>
+</body>
+</html>

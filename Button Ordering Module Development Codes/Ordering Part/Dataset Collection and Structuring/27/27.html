@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="main.js"></script>
+	<link href="style.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artistic Flow</title>
+    <style>
+        body {
+            background-image: 
+                radial-gradient(circle at 25% 25%, #ff6b6b 0%, transparent 50%),
+                radial-gradient(circle at 75% 75%, #4ecdc4 0%, transparent 50%),
+                linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            height: 100vh;
+            font-family: 'Georgia', serif;
+        }
+        .diagonal-line {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform: rotate(-30deg);
+        }
+        .diagonal-btn {
+            background-color: rgba(255, 255, 255, 0.9);
+            color: #2c3e50;
+            border: 3px solid #2c3e50;
+            padding: 20px 40px;
+            font-size: 18px;
+            cursor: pointer;
+            margin: 0 30px;
+            transform: rotate(30deg);
+            border-radius: 0;
+            font-weight: bold;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        .floating-top {
+            position: absolute;
+            top: 10%;
+            right: 20%;
+            background-color: #e74c3c;
+            color: #ffffff;
+            border: none;
+            padding: 40px 80px;
+            font-size: 28px;
+            cursor: pointer;
+            border-radius: 50%;
+            transform: rotate(15deg);
+        }
+        .floating-bottom {
+            position: absolute;
+            bottom: 15%;
+            left: 15%;
+            background-color: #f39c12;
+            color: #ffffff;
+            border: none;
+            padding: 12px 24px;
+            font-size: 12px;
+            cursor: pointer;
+            border-radius: 20px;
+            transform: rotate(-45deg);
+        }
+        .corner-special {
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            background: linear-gradient(45deg, #9b59b6, #8e44ad);
+            color: #ffffff;
+            border: none;
+            padding: 15px 30px;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 10px;
+            transform: skew(20deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="diagonal-line">
+        <button class="diagonal-btn">CREATE</button>
+        <button class="diagonal-btn">INSPIRE</button>
+        <button class="diagonal-btn">FLOW</button>
+    </div>
+    
+    <button class="floating-top">ART</button>
+    <button class="floating-bottom">details</button>
+    <button class="corner-special">Studio</button>
+</body>
+</html>

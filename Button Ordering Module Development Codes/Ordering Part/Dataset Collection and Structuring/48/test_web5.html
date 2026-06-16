@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="main.js"></script>
+<title>Button Click Tracker</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    padding: 20px;
+  }
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  .button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: #f9a7a6;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .button:hover {
+    background-color: #ff7e5f;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h2 style="text-align: center;">Button Click Tracker</h2>
+  <p style="text-align: center;">Welcome! Click on the buttons below to track their order:</p>
+  <header>
+    <button class="button" onclick="test_func(this)">Button A</button>
+    <button class="button" onclick="test_func(this)">Button B</button>
+  </header>
+  <div>
+    <button class="button" onclick="test_func(this)">Button C</button>
+    <button class="button" onclick="test_func(this)">Button D</button>
+  </div>
+  <footer>
+    <button class="button" onclick="test_func(this)">Button E</button>
+    <button class="button" onclick="test_func(this)">Button F</button>
+  </footer>
+</div>
+
+<script>
+  let clickOrder = [];
+
+  function trackButtonClick(buttonTitle) {
+    clickOrder.push(buttonTitle);
+    console.log("Clicked:", buttonTitle);
+    console.log("Click Order:", clickOrder);
+  }
+</script>
+</body>
+</html>

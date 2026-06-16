@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Care</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .navbar {
+            background-color: #28a745;
+        }
+        .jumbotron {
+            background: #fff;
+            margin-top: 50px;
+            color: #333;
+            padding: 2rem;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .btn-rounded {
+            border-radius: 50px;
+            background-color: rgba(255, 99, 71, 0.8);
+            color: #fff;
+            font-weight: bold;
+            border: none;
+        }
+        .btn-rounded:hover {
+            background-color: rgba(255, 99, 71, 1);
+        }
+        .btn-square {
+            border-radius: 0;
+            background-color: rgba(30, 144, 255, 0.8);
+            color: #fff;
+            font-weight: bold;
+            border: none;
+        }
+        .btn-square:hover {
+            background-color: rgba(30, 144, 255, 1);
+        }
+        .btn-oval {
+            border-radius: 25px;
+            background-color: rgba(34, 139, 34, 0.8);
+            color: #fff;
+            font-weight: bold;
+            border: none;
+        }
+        .btn-oval:hover {
+            background-color: rgba(34, 139, 34, 1);
+        }
+        .btn-transparent {
+            background: none;
+            border: 2px solid #007bff;
+            color: #007bff;
+            font-weight: bold;
+        }
+        .btn-transparent:hover {
+            background-color: rgba(0, 123, 255, 0.1);
+        }
+        .btn-bad {
+            background-color: red;
+            color: white;
+            border-radius: 0;
+            border: none;
+        }
+        .btn-bad:hover {
+            background-color: darkred;
+        }
+        .btn-dark-transparent {
+            background: none;
+            border: 2px solid #333;
+            color: #333;
+            font-weight: bold;
+        }
+        .btn-dark-transparent:hover {
+            background-color: rgba(51, 51, 51, 0.3);
+        }
+        .footer {
+            background-color: #28a745;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        .content-section {
+            padding: 2rem 0;
+        }
+        .btn {
+            transition: all 0.3s ease;
+        }
+        .img-fluid {
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Medical Care</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Doctors</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Appointments</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="jumbotron text-center">
+        <h1>Welcome to Medical Care</h1>
+        <p>Your Health, Our Priority</p>
+        <img src="https://via.placeholder.com/800x400" class="img-fluid mb-4" alt="Medical Care">
+        <div>
+            <button class="btn btn-rounded btn-lg mr-2">Learn More</button>
+            <button class="btn btn-square btn-lg mr-2">Book Appointment</button>
+            <button class="btn btn-oval btn-lg mr-2">Our Doctors</button>
+            <button class="btn btn-transparent btn-lg mr-2">Contact Us</button>
+            <button class="btn btn-dark-transparent btn-lg mr-2">Get Support</button>
+            <button class="btn btn-bad btn-lg">Emergency</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="content-section">
+            <h2>Our Services</h2>
+            <p>We provide a wide range of medical services to ensure you get the care you need.</p>
+            <div>
+                <button class="btn btn-rounded mr-2">Primary Care</button>
+                <button class="btn btn-square mr-2">Specialist Care</button>
+                <button class="btn btn-oval mr-2">Surgical Care</button>
+                <button class="btn btn-transparent mr-2">Mental Health</button>
+                <button class="btn btn-dark-transparent mr-2">Pharmacy Services</button>
+                <button class="btn btn-bad">Emergency Care</button>
+            </div>
+            <img src="https://via.placeholder.com/800x400" class="img-fluid mt-4" alt="Our Services">
+        </div>
+
+        <div class="content-section">
+            <h2>Meet Our Doctors</h2>
+            <p>Our team of experienced doctors is here to provide the best care possible.</p>
+            <div>
+                <button class="btn btn-rounded mr-2">Dr. Smith</button>
+                <button class="btn btn-square mr-2">Dr. Johnson</button>
+                <button class="btn btn-oval mr-2">Dr. Lee</button>
+                <button class="btn btn-transparent mr-2">Dr. Davis</button>
+                <button class="btn btn-dark-transparent mr-2">Dr. Clark</button>
+                <button class="btn btn-bad">Dr. Lopez</button>
+            </div>
+            <img src="https://via.placeholder.com/800x400" class="img-fluid mt-4" alt="Our Doctors">
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Medical Care. All rights reserved.</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

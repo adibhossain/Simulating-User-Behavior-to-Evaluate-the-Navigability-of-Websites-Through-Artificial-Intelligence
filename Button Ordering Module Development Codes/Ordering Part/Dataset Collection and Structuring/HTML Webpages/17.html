@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corner Interface</title>
+    <style>
+        body {
+            background-color: #ecf0f1;
+            color: #2c3e50;
+            font-family: 'Trebuchet MS', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            height: 100vh;
+        }
+        .btn {
+            position: absolute;
+            border: none;
+            cursor: pointer;
+            font-family: 'Trebuchet MS', sans-serif;
+            transition: all 0.3s;
+        }
+        .btn:hover {
+            opacity: 0.7;
+        }
+        .corner-tl1 {
+            top: 10px;
+            left: 10px;
+            padding: 40px 80px;
+            background-color: #e74c3c;
+            color: white;
+            border-radius: 0 0 50px 0;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .corner-tl2 {
+            top: 120px;
+            left: 15px;
+            padding: 4px 8px;
+            background-color: #3498db;
+            color: white;
+            border-radius: 0 15px 0 0;
+            font-size: 8px;
+        }
+        .corner-tr1 {
+            top: 15px;
+            right: 15px;
+            padding: 25px 50px;
+            background-color: #2ecc71;
+            color: white;
+            border-radius: 0 0 0 40px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        .corner-tr2 {
+            top: 100px;
+            right: 20px;
+            padding: 8px 16px;
+            background-color: #9b59b6;
+            color: white;
+            border-radius: 25px 0 0 0;
+            font-size: 12px;
+        }
+        .corner-bl1 {
+            bottom: 20px;
+            left: 20px;
+            padding: 30px 60px;
+            background-color: #f39c12;
+            color: black;
+            border-radius: 0 45px 0 0;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .corner-bl2 {
+            bottom: 120px;
+            left: 25px;
+            padding: 6px 12px;
+            background-color: #1abc9c;
+            color: white;
+            border-radius: 0 0 0 20px;
+            font-size: 9px;
+        }
+        .corner-br1 {
+            bottom: 25px;
+            right: 25px;
+            padding: 35px 70px;
+            background-color: #e91e63;
+            color: white;
+            border-radius: 50px 0 0 0;
+            font-size: 26px;
+            font-weight: bold;
+        }
+        .corner-br2 {
+            bottom: 130px;
+            right: 30px;
+            padding: 10px 20px;
+            background-color: #34495e;
+            color: white;
+            border-radius: 0 0 30px 0;
+            font-size: 14px;
+        }
+        .center-tiny {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 2px 4px;
+            background-color: #95a5a6;
+            color: white;
+            border-radius: 2px;
+            font-size: 6px;
+        }
+        .floating-mid {
+            top: 40%;
+            left: 30%;
+            padding: 16px 32px;
+            background-color: #d35400;
+            color: white;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <button class="btn corner-tl1">START</button>
+    <button class="btn corner-tl2">info</button>
+    <button class="btn corner-tr1">MENU</button>
+    <button class="btn corner-tr2">options</button>
+    <button class="btn corner-bl1">HELP</button>
+    <button class="btn corner-bl2">tips</button>
+    <button class="btn corner-br1">EXIT</button>
+    <button class="btn corner-br2">settings</button>
+    <button class="btn center-tiny">x</button>
+    <button class="btn floating-mid">Action</button>
+</body>
+</html>

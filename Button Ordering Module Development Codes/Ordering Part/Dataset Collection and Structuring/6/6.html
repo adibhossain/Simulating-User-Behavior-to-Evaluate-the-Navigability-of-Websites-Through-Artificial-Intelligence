@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="main.js"></script>
+	<link href="style.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Innovators</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('https://www.w3schools.com/w3images/tech_bg.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            color: #333;
+        }
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        .jumbotron {
+            background: rgba(255, 255, 255, 0.8);
+            margin-top: 50px;
+            color: #333;
+            padding: 2rem;
+        }
+        .btn-rounded {
+            border-radius: 50px;
+            background-color: rgba(255, 99, 71, 0.8);
+            color: #fff;
+            font-weight: bold;
+            border: none;
+        }
+        .btn-rounded:hover {
+            background-color: rgba(255, 99, 71, 1);
+        }
+        .btn-square {
+            border-radius: 0;
+            background-color: rgba(30, 144, 255, 0.8);
+            color: #fff;
+            font-weight: bold;
+            border: none;
+        }
+        .btn-square:hover {
+            background-color: rgba(30, 144, 255, 1);
+        }
+        .btn-oval {
+            border-radius: 25px;
+            background-color: rgba(34, 139, 34, 0.8);
+            color: #fff;
+            font-weight: bold;
+            border: none;
+        }
+        .btn-oval:hover {
+            background-color: rgba(34, 139, 34, 1);
+        }
+        .btn-transparent {
+            background: none;
+            border: 2px solid #fff;
+            color: #fff;
+            font-weight: bold;
+        }
+        .btn-transparent:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+        .btn-bad {
+            background-color: red;
+            color: white;
+            border-radius: 0;
+            border: none;
+        }
+        .btn-bad:hover {
+            background-color: darkred;
+        }
+        .btn-dark-transparent {
+            background: none;
+            border: 2px solid #333;
+            color: #333;
+            font-weight: bold;
+        }
+        .btn-dark-transparent:hover {
+            background-color: rgba(51, 51, 51, 0.3);
+        }
+        .card-title, .card-text {
+            color: #333 !important;
+        }
+        .hamburger {
+            display: inline-block;
+            cursor: pointer;
+            padding: 10px;
+        }
+        .hamburger .bar {
+            width: 25px;
+            height: 3px;
+            margin: 4px 0;
+            background-color: #fff;
+            transition: 0.4s;
+        }
+        .nav-links {
+            display: none;
+        }
+        .nav-links.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="jumbotron text-center">
+        <h1>Welcome to Tech Innovators</h1>
+        <p>Exploring the future of technology</p>
+        <button class="btn btn-rounded btn-lg" onclick="test_func(this)">Learn More</button>
+        <button class="btn btn-square btn-lg" onclick="test_func(this)">Gallery</button>
+        <button class="btn btn-oval btn-lg" onclick="test_func(this)">Donate</button>
+        <button class="btn btn-transparent btn-lg" onclick="test_func(this)">Contact Us</button>
+        <button class="btn btn-dark-transparent btn-lg" onclick="test_func(this)">Volunteer</button>
+        <button class="btn btn-bad btn-lg" onclick="test_func(this)">Click Me</button>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="https://www.w3schools.com/w3images/tech1.jpg" alt="Tech Image 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Innovative Gadgets</h5>
+                        <p class="card-text">Explore the latest in tech innovations and gadgets that are shaping the future.</p>
+                        <a href="#" class="btn btn-rounded" onclick="test_func(this)">Learn More</a>
+                        <a href="#" class="btn btn-dark-transparent" onclick="test_func(this)">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="https://www.w3schools.com/w3images/tech2.jpg" alt="Tech Image 2">
+                    <div class="card-body">
+                        <h5 class="card-title">AI and Robotics</h5>
+                        <p class="card-text">Discover the advancements in AI and robotics, and how they are transforming industries.</p>
+                        <a href="#" class="btn btn-square" onclick="test_func(this)">Learn More</a>
+                        <a href="#" class="btn btn-transparent" onclick="test_func(this)">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="https://www.w3schools.com/w3images/tech3.jpg" alt="Tech Image 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Future of Mobility</h5>
+                        <p class="card-text">Get insights into the future of transportation and mobility solutions.</p>
+                        <a href="#" class="btn btn-oval" onclick="test_func(this)">Learn More</a>
+                        <a href="#" class="btn btn-dark-transparent" onclick="test_func(this)">Discover</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.navbar-toggler').click(function(){
+                $('.nav-links').toggleClass('active');
+            });
+        });
+    </script>
+</body>
+</html>

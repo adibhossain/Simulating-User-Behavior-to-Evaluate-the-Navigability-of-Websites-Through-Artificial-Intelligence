@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="main.js"></script>
+	<link href="style.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dataset Pattern 3</title>
+    <style>
+        body {
+            background-color: #cc0000;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        .content {
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .center-btn {
+            background-color: rgba(255, 51, 51, 0.8);
+            color: rgba(255, 102, 102, 0.6);
+            border: none;
+            padding: 30px 60px;
+            font-size: 24px;
+            cursor: pointer;
+            width: 180px;
+            height: 58px;
+        }
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(0, 80, 0, 1.0);
+            padding: 15px 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .footer-btn1 {
+            background-color: rgba(26, 26, 26, 1.0);
+            color: rgba(51, 51, 51, 0.8);
+            border: none;
+            padding: 14px 28px;
+            font-size: 13px;
+            cursor: pointer;
+            width: 97px;
+            height: 31px;
+        }
+        .footer-btn2 {
+            background-color: rgba(42, 42, 42, 1.0);
+            color: rgba(68, 68, 68, 0.7);
+            border: none;
+            padding: 10px 20px;
+            font-size: 12px;
+            cursor: pointer;
+            width: 72px;
+            height: 25px;
+        }
+        .footer-btn3 {
+            background-color: rgba(58, 58, 58, 1.0);
+            color: rgba(85, 85, 85, 0.6);
+            border: none;
+            padding: 8px 16px;
+            font-size: 10px;
+            cursor: pointer;
+            width: 52px;
+            height: 21px;
+        }
+        .footer-btn4 {
+            background-color: rgba(90, 90, 90, 1.0);
+            color: rgba(119, 119, 119, 0.8);
+            border: none;
+            padding: 12px 24px;
+            font-size: 11px;
+            cursor: pointer;
+            width: 66px;
+            height: 27px;
+        }
+        .footer-btn5 {
+            background-color: rgba(122, 122, 122, 1.0);
+            color: rgba(153, 153, 153, 0.9);
+            border: none;
+            padding: 16px 32px;
+            font-size: 14px;
+            cursor: pointer;
+            width: 84px;
+            height: 35px;
+        }
+        .footer-btn6 {
+            background-color: rgba(170, 170, 170, 1.0);
+            color: rgba(204, 204, 204, 0.7);
+            border: none;
+            padding: 6px 12px;
+            font-size: 9px;
+            cursor: pointer;
+            width: 44px;
+            height: 18px;
+        }
+    </style>
+    <script>
+        function buttonClick(text) {
+            console.log('Button clicked: ' + text);
+        }
+    </script>
+</head>
+<body>
+    <div class="content">
+        <button class="center-btn" onclick="buttonClick('CENTER')">CENTER</button>
+    </div>
+    
+    <footer class="footer">
+        <button class="footer-btn1" onclick="buttonClick('dark1')">dark1</button>
+        <button class="footer-btn2" onclick="buttonClick('dark2')">dark2</button>
+        <button class="footer-btn3" onclick="buttonClick('dim')">dim</button>
+        <button class="footer-btn4" onclick="buttonClick('gray')">gray</button>
+        <button class="footer-btn5" onclick="buttonClick('light')">light</button>
+        <button class="footer-btn6" onclick="buttonClick('x')">x</button>
+    </footer>
+</body>
+</html>

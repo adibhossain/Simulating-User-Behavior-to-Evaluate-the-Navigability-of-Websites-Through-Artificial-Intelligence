@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Hub</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .navbar {
+            background-color: #007bff;
+        }
+        .jumbotron {
+            background: #fff;
+            margin-top: 50px;
+            color: #333;
+            padding: 2rem;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .btn-rounded {
+            border-radius: 50px;
+            background-color: rgba(255, 99, 71, 0.8);
+            color: #fff;
+            font-weight: bold;
+            border: none;
+        }
+        .btn-rounded:hover {
+            background-color: rgba(255, 99, 71, 1);
+        }
+        .btn-square {
+            border-radius: 0;
+            background-color: rgba(30, 144, 255, 0.8);
+            color: #fff;
+            font-weight: bold;
+            border: none;
+        }
+        .btn-square:hover {
+            background-color: rgba(30, 144, 255, 1);
+        }
+        .btn-oval {
+            border-radius: 25px;
+            background-color: rgba(34, 139, 34, 0.8);
+            color: #fff;
+            font-weight: bold;
+            border: none;
+        }
+        .btn-oval:hover {
+            background-color: rgba(34, 139, 34, 1);
+        }
+        .btn-transparent {
+            background: none;
+            border: 2px solid #007bff;
+            color: #007bff;
+            font-weight: bold;
+        }
+        .btn-transparent:hover {
+            background-color: rgba(0, 123, 255, 0.1);
+        }
+        .btn-bad {
+            background-color: red;
+            color: white;
+            border-radius: 0;
+            border: none;
+        }
+        .btn-bad:hover {
+            background-color: darkred;
+        }
+        .btn-dark-transparent {
+            background: none;
+            border: 2px solid #333;
+            color: #333;
+            font-weight: bold;
+        }
+        .btn-dark-transparent:hover {
+            background-color: rgba(51, 51, 51, 0.3);
+        }
+        .card-title, .card-text {
+            color: #333 !important;
+        }
+        .hamburger {
+            display: inline-block;
+            cursor: pointer;
+            padding: 10px;
+        }
+        .hamburger .bar {
+            width: 25px;
+            height: 3px;
+            margin: 4px 0;
+            background-color: #fff;
+            transition: 0.4s;
+        }
+        .nav-links {
+            display: none;
+        }
+        .nav-links.active {
+            display: block;
+        }
+        .footer {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Student Hub</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto nav-links">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="events.html">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="jumbotron text-center">
+        <h1>Welcome to the Student Hub</h1>
+        <p>Your one-stop destination for all student activities and resources</p>
+        <button class="btn btn-rounded btn-lg">Learn More</button>
+        <button class="btn btn-square btn-lg">Join Us</button>
+        <button class="btn btn-oval btn-lg">Events</button>
+        <button class="btn btn-transparent btn-lg">Contact Us</button>
+        <button class="btn btn-dark-transparent btn-lg">Resources</button>
+        <button class="btn btn-bad btn-lg">Click Me</button>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="https://www.w3schools.com/w3images/team1.jpg" alt="Team Image 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Study Groups</h5>
+                        <p class="card-text">Join study groups and collaborate with your peers.</p>
+                        <a href="#" class="btn btn-rounded">Join Now</a>
+                        <a href="#" class="btn btn-dark-transparent">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="https://www.w3schools.com/w3images/team2.jpg" alt="Team Image 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Workshops</h5>
+                        <p class="card-text">Participate in workshops and enhance your skills.</p>
+                        <a href="#" class="btn btn-square">Register</a>
+                        <a href="#" class="btn btn-transparent">Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="https://www.w3schools.com/w3images/team3.jpg" alt="Team Image 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Networking Events</h5>
+                        <p class="card-text">Connect with industry professionals and alumni.</p>
+                        <a href="#" class="btn btn-oval">Sign Up</a>
+                        <a href="#" class="btn btn-dark-transparent">More Info</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Student Hub. All rights reserved.</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.navbar-toggler').click(function(){
+                $('.nav-links').toggleClass('active');
+            });
+        });
+    </script>
+</body>
+</html>

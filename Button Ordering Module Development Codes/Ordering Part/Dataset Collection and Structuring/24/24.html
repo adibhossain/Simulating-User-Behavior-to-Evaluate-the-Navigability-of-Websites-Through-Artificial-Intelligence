@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="main.js"></script>
+	<link href="style.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mountain Explorer</title>
+    <style>
+        body {
+            background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&h=1080&fit=crop');
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            height: 100vh;
+            font-family: 'Verdana', sans-serif;
+        }
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 15px 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .nav-btn {
+            background-color: transparent;
+            color: #ffffff;
+            border: 2px solid #ffffff;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+        .nav-btn:hover {
+            background-color: #ffffff;
+            color: #000000;
+        }
+        .hero-btn {
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #ff6b35;
+            color: #ffffff;
+            border: none;
+            padding: 25px 50px;
+            font-size: 24px;
+            font-weight: bold;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+        .side-btn {
+            position: absolute;
+            right: 30px;
+            top: 40%;
+            background-color: rgba(255, 255, 255, 0.9);
+            color: #333333;
+            border: none;
+            padding: 15px 30px;
+            font-size: 16px;
+            border-radius: 25px;
+            cursor: pointer;
+            transform: rotate(90deg);
+        }
+        .corner-btn {
+            position: absolute;
+            bottom: 30px;
+            left: 30px;
+            background-color: #28a745;
+            color: #ffffff;
+            border: none;
+            padding: 12px 24px;
+            font-size: 12px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <button class="nav-btn">Home</button>
+        <button class="nav-btn">Trails</button>
+        <button class="nav-btn">Gear</button>
+        <button class="nav-btn">Weather</button>
+        <button class="nav-btn">Contact</button>
+    </nav>
+    
+    <button class="hero-btn">EXPLORE NOW</button>
+    <button class="side-btn">Guide</button>
+    <button class="corner-btn">Emergency</button>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="main.js"></script>
+<title>Button Click Tracker</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+  }
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .button.small {
+    padding: 5px 10px;
+    font-size: 14px;
+    right: 20px;
+    position: absolute;
+  }
+  .button.large {
+    padding: 50px 30px;
+    font-size: 18px;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h2>Button Click Tracker</h2>
+  <p>Welcome! Click on the buttons below to track their order:</p>
+  <button style="background-color: green;" class="button" onclick="test_func(this)">Button 1</button>
+  <!-- <button style="background-color: red;" class="button small" onclick="test_func(this)">Button 2</button> -->
+  <button style="background-color: blue;" class="button large" onclick="test_func(this)">Button 3</button>
+  <button style="background-color: pink;" class="button" onclick="test_func(this)">Button 4</button>
+  <button style="background-color: brown;" class="button small" onclick="test_func(this)">Button 5</button>
+  <button style="background-color: yellow;" class="button large" onclick="test_func(this)">Button 6</button>
+
+
+</div>
+
+<footer>
+  <button style="background-color:blueviolet" class="button" onclick="test_func(this)">Button 7</button>
+  <button style="background-color:gold"  class="button small" onclick="test_func(this)">Button 8</button>
+</footer>
+
+</body>
+</html>

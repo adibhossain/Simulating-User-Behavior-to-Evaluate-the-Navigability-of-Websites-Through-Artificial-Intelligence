@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Kingdom</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('https://www.w3schools.com/w3images/forestbridge.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            color: #333;
+        }
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        .jumbotron {
+            background: rgba(255, 255, 255, 0.8);
+            margin-top: 50px;
+            color: #333;
+            padding: 2rem;
+        }
+        .btn-rounded {
+            border-radius: 50px;
+            background-color: rgba(255, 99, 71, 0.8);
+            color: #fff;
+            font-weight: bold;
+            border: none;
+        }
+        .btn-rounded:hover {
+            background-color: rgba(255, 99, 71, 1);
+        }
+        .btn-square {
+            border-radius: 0;
+            background-color: rgba(30, 144, 255, 0.8);
+            color: #fff;
+            font-weight: bold;
+            border: none;
+        }
+        .btn-square:hover {
+            background-color: rgba(30, 144, 255, 1);
+        }
+        .btn-oval {
+            border-radius: 25px;
+            background-color: rgba(34, 139, 34, 0.8);
+            color: #fff;
+            font-weight: bold;
+            border: none;
+        }
+        .btn-oval:hover {
+            background-color: rgba(34, 139, 34, 1);
+        }
+        .btn-transparent {
+            background: none;
+            border: 2px solid #fff;
+            color: #fff;
+            font-weight: bold;
+        }
+        .btn-transparent:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+        .card-title, .card-text {
+            color: #333 !important;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Animal Kingdom</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="jumbotron text-center">
+        <h1>Discover the Animal Kingdom</h1>
+        <p>Explore the diverse species of the animal world</p>
+        <button class="btn btn-rounded btn-lg">Learn More</button>
+        <button class="btn btn-square btn-lg">Gallery</button>
+        <button class="btn btn-oval btn-lg">Donate</button>
+        <button class="btn btn-transparent btn-lg">Contact Us</button>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="https://www.w3schools.com/w3images/lion.jpg" alt="Lion">
+                    <div class="card-body">
+                        <h5 class="card-title">Lions</h5>
+                        <p class="card-text">The king of the jungle, known for its strength and majestic appearance.</p>
+                        <a href="#" class="btn btn-rounded">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="https://www.w3schools.com/w3images/elephant.jpg" alt="Elephant">
+                    <div class="card-body">
+                        <h5 class="card-title">Elephants</h5>
+                        <p class="card-text">Gentle giants known for their intelligence and strong social bonds.</p>
+                        <a href="#" class="btn btn-square">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="https://www.w3schools.com/w3images/giraffe.jpg" alt="Giraffe">
+                    <div class="card-body">
+                        <h5 class="card-title">Giraffes</h5>
+                        <p class="card-text">Known for their long necks, giraffes are the tallest land animals.</p>
+                        <a href="#" class="btn btn-oval">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
