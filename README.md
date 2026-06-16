@@ -1,4 +1,4 @@
-# Human-Like Autonomous Web Navigation Agent
+# Simulating User Behavior to Evaluate the Navigability of Websites Through Artificial Intelligence
 
 An autonomous agent that explores a website the way a human would — moving the mouse along curved, jittered, eased paths — and tries to reach a target page on its own. It combines **computer vision**, a **machine-learning ranking model**, and **semantic text matching** to decide *which* button to click and *in what order*, then produces a navigation-graph report.
 
